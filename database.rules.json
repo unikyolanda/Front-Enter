@@ -19,6 +19,9 @@
     "quizData": {
       ".read": true,
       ".write": true
+    },
+    "contacts": {
+      ".write": true
     }
   }
 }

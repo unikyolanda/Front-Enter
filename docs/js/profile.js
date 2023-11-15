@@ -4,7 +4,7 @@ import { checkUserLoggedIn } from './firebase.js';
 
 checkUserLoggedIn().then(user => {
     fetchAndDisplayUserProfile(user.uid);
-}).catch(() => { window.location.href = 'index.html'; });
+}).catch(() => { window.location.href = 'https://unikyolanda.github.io/Front-Enter/index.html'; });
 
 const auth = getAuth();
 const db = getDatabase();
