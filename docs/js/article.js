@@ -202,9 +202,9 @@ function addBookmark() {
         function setBookmarkBackground(bookmarkElement, articleId) {
             let clickCount = parseInt(localStorage.getItem('clickCount_' + articleId), 10) || 0;
             if (clickCount === 1) {
-                bookmarkElement.style.background = `url("/Front-Enter/docs/image/star-background.svg") center / cover no-repeat`;
+                bookmarkElement.style.background = `url("../Front-Enter/docs/image/star-background.svg") center / cover no-repeat`;
             } else {
-                bookmarkElement.style.background = `url("/Front-Enter/docs/image/star-border.svg") center / cover no-repeat`;
+                bookmarkElement.style.background = `url("../Front-Enter/docs/image/star-border.svg") center / cover no-repeat`;
             }
         }
 
