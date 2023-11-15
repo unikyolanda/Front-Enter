@@ -205,7 +205,7 @@ function correctAns(finishedDiv, nextDivOne, nextDivTwo) {
         app.get('.arrow-continue').style.display = 'none';
     });
     const ans = app.get('.game-select-one');
-    ans.style.background= 'url(../image/checked-FFD800.svg)';
+    ans.style.background= 'url(/Front-Enter/docs/image/checked-FFD800.svg)';
     ans.style.backgroundSize= 'contain';
     ans.style.backgroundColor= 'rgba(255,255,255,0.8)';
     ans.style.backgroundRepeat= 'no-repeat';
@@ -214,7 +214,7 @@ function correctAns(finishedDiv, nextDivOne, nextDivTwo) {
 
 function wrongAns(el) {
     app.get(el).style.animation = 'wrongAnsShake 0.6s ease 0s 1';
-    app.get(el).style.background= 'url(../image/cancel-FC4803.svg)';
+    app.get(el).style.background= 'url(/Front-Enter/docs/image/cancel-FC4803.svg)';
     app.get(el).style.backgroundSize= 'contain';
     app.get(el).style.backgroundColor= 'rgba(255,255,255,0.8)';
     app.get(el).style.backgroundRepeat= 'no-repeat';
@@ -237,14 +237,14 @@ app.get('.icon-outside').addEventListener('click', function() {
     app.get('.icon-outside').style.display = 'none';
 });
 app.get('.icon-one').addEventListener('click', function() {
-    app.get('.user-icon').style.background = 'url(../image/cute.svg) left center / contain no-repeat';
+    app.get('.user-icon').style.background = 'url(/Front-Enter/docs/image/cute.svg) left center / contain no-repeat';
     app.get('.icon-outside').style.display = 'none';
 })
 app.get('.icon-two').addEventListener('click', function() {
-    app.get('.user-icon').style.background = 'url(../image/cute2.svg) left center / contain no-repeat';
+    app.get('.user-icon').style.background = 'url(/Front-Enter/docs/image/cute2.svg) left center / contain no-repeat';
     app.get('.icon-outside').style.display = 'none';
 })
 app.get('.icon-three').addEventListener('click', function() {
-    app.get('.user-icon').style.background = 'url(../image/cute3.svg) left center / contain no-repeat';
+    app.get('.user-icon').style.background = 'url(/Front-Enter/docs/image/cute3.svg) left center / contain no-repeat';
     app.get('.icon-outside').style.display = 'none';
 })
