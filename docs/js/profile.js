@@ -2,10 +2,6 @@ import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/9.0.0/fireb
 import { getDatabase, ref, get, update } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js";
 import { checkUserLoggedIn } from './firebase.js';
 
-checkUserLoggedIn().then(user => {
-    fetchAndDisplayUserProfile(user.uid);
-}).catch(() => { window.location.href = 'https://unikyolanda.github.io/Front-Enter/index.html'; });
-
 const auth = getAuth();
 const db = getDatabase();
   
@@ -133,6 +129,10 @@ app.get('.collection').addEventListener('click',function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+    checkUserLoggedIn().then(user => {
+        fetchAndDisplayUserProfile(user.uid);
+    }).catch(() => { window.location.href = 'https://unikyolanda.github.io/Front-Enter/index.html'; });
+
     function renderBookmarks(bookmarks) {
         const container = app.get('.profile-collection');
         bookmarks.forEach(bookmark => {
