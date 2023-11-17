@@ -131,7 +131,7 @@ app.get('.collection').addEventListener('click',function() {
 document.addEventListener('DOMContentLoaded', function() {
     checkUserLoggedIn().then(user => {
         fetchAndDisplayUserProfile(user.uid);
-    }).catch(() => { window.location.href = 'https://unikyolanda.github.io/Front-Enter/index.html'; });
+    }).catch(() => { window.location.href = '../Front-Enter/article.html'; });
 
     function renderBookmarks(bookmarks) {
         const container = app.get('.profile-collection');
