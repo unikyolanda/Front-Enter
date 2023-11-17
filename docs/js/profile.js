@@ -111,7 +111,7 @@ app.get('.cancel').addEventListener('click', function() {
 function logout() {
     signOut(auth).then(() => {
       console.log('User signed out.');
-      window.location.href = '/index.html';
+      window.location.href = '../Front-Enter/index.html';
     }).catch((error) => {
       console.error('Error signing out: ', error);
     });
@@ -131,7 +131,7 @@ app.get('.collection').addEventListener('click',function() {
 document.addEventListener('DOMContentLoaded', function() {
     checkUserLoggedIn().then(user => {
         fetchAndDisplayUserProfile(user.uid);
-    }).catch(() => { window.location.href = 'https://unikyolanda.github.io/Front-Enter/index.html'; });
+    }).catch(() => { window.location.href = '../Front-Enter/index.html'; });
 
     function renderBookmarks(bookmarks) {
         const container = app.get('.profile-collection');
